@@ -14,6 +14,7 @@ function decrement() {
 }
 
 function save() {
+  if (count == 0) return;
   var saveEl = document.getElementById("save-el");
   var result = saveEl.innerText;
   result += " " + count + " - ";
